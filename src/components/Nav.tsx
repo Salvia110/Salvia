@@ -1,29 +1,49 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "../assets/logo2.png";
 import "../App.css";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header className="font-sans text-[15px]">
       {/* Top Contact Bar */}
-      <div className="bg-[var(--primary-color)] text-white hidden md:block">
-        <div className="w-11/12 mx-auto flex justify-between items-center px-2 md:px-4 py-2 md:py-3 text-inherit">
-          <div>Toll Free: +91-2279660144</div>
-          <div className="hidden md:flex space-x-6">
-            <button className="hover:underline transition">CATALOG</button>
-            <button className="hover:underline transition">
-              CORPORATE OFFICE
-            </button>
-            <button className="hover:underline transition">FAQ</button>
+      {!isScrolled && (
+        <div className="bg-[var(--primary-color)] text-white hidden md:block transition-all duration-300">
+          <div className="w-11/12 mx-auto flex justify-between items-center px-2 md:px-4 py-2 md:py-3 text-inherit">
+            <div>Toll Free: +91-2279660144</div>
+            <div className="hidden md:flex space-x-6">
+              <button className="hover:underline transition">CATALOG</button>
+              <button className="hover:underline transition">
+                CORPORATE OFFICE
+              </button>
+              <button className="hover:underline transition">FAQ</button>
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       {/* Main Navbar */}
-      <div className="bg-white shadow-md">
+      <div
+        className={`bg-white shadow-md transition-all duration-300 ${
+          isScrolled ? "fixed top-0 left-0 right-0 z-50" : ""
+        }`}
+      >
         <div className="md:w-11/12 mx-auto flex justify-between items-center px-6 md:px-4 py-3 relative">
           {/* Logo */}
           <div>
@@ -71,13 +91,14 @@ function Nav() {
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
 
+          {/* Mobile Overlay */}
           {isOpen && (
             <div className="fixed top-70 inset-0 bg-white/60 backdrop-blur-sm z-40"></div>
           )}
 
           {/* Mobile Dropdown Menu */}
           {isOpen && (
-            <div className="absolute top-full left-0 w-full bg-white/70 backdrop-blur-md  shadow-md flex flex-col items-center px-6 py-6 space-y-5 z-50 text-gray-800 md:hidden">
+            <div className="absolute top-full left-0 w-full bg-white/70 backdrop-blur-md shadow-md flex flex-col items-center px-6 py-6 space-y-5 z-50 text-gray-800 md:hidden">
               <a
                 href="#"
                 className="hover:text-[var(--secondary-color)] transition"
