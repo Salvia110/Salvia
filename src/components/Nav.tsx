@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "../assets/logo2.png";
 import "../App.css";
+import catalog from "../assets/Catalog.pdf";
+import { FaPhoneAlt } from "react-icons/fa";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,13 +28,20 @@ function Nav() {
       {!isScrolled && (
         <div className="bg-[var(--primary-color)] text-white hidden md:block transition-all duration-300">
           <div className="w-11/12 mx-auto flex justify-between items-center px-2 md:px-4 py-2 md:py-3 text-inherit">
-            <div>Toll Free: +91-2279660144</div>
+            <div className="flex items-center space-x-2">
+              <FaPhoneAlt className="text-white" size={20} /> {/* Phone Icon */}
+              <span>+91 7838852591</span>
+            </div>
             <div className="hidden md:flex space-x-6">
-              <button className="hover:underline transition">CATALOG</button>
-              <button className="hover:underline transition">
+              <a href={catalog} target="_blank" rel="noopener noreferrer">
+                <button className="hover:underline transition cursor-pointer">
+                  CATALOG
+                </button>
+              </a>
+
+              <button className="hover:underline transition cursor-pointer">
                 CORPORATE OFFICE
               </button>
-              <button className="hover:underline transition">FAQ</button>
             </div>
           </div>
         </div>
