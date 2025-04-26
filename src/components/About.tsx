@@ -4,7 +4,7 @@ import catelog from "../assets/Catalog.pdf";
 
 const AboutUs = () => {
   return (
-    <section className="w-11/12 mx-auto bg-white py-12 px-6 flex flex-col md:flex-row items-center justify-between">
+    <section className="md:w-11/12 mx-auto bg-white py-12 px-4 flex flex-col md:flex-row items-center justify-between">
       {/* Left Content */}
       <div className="w-full md:w-1/2">
         {/* Small Heading */}
@@ -50,7 +50,7 @@ const AboutUs = () => {
       </div>
 
       {/* Right Content */}
-      <div className="relative w-full md:w-1/2 flex justify-center">
+      <div className="relative w-full md:w-1/2 justify-center hidden md:block">
         {/* Hexagon Top Left */}
         <div className="absolute top-4 left-8">
           <div className="w-8 h-8 bg-[var(--primary-color)] clip-hexagon mb-2"></div>

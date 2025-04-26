@@ -12,7 +12,7 @@ function AboutUs() {
   return (
     <div>
       <Nav />
-      <section className="w-11/12 mx-auto mt-5 bg-white mb-10 px-6 flex flex-col md:flex-row items-center justify-between">
+      <section className="md:w-11/12 mx-auto mt-5 bg-white mb-10 px-4 flex flex-col md:flex-row items-center justify-between">
         {/* Left Content */}
         <div className="w-full md:w-1/2">
           {/* Small Heading */}

@@ -6,9 +6,9 @@ import mainImage from "../assets/WhySalvia/whysalvia.jpg";
 
 const WhySalvia = () => {
   return (
-    <section className="w-11/12 mx-auto bg-white py-6 px-2 flex flex-col-reverse md:flex-row items-center justify-between mb-10">
+    <section className="md:w-11/12 mx-auto bg-white py-6 px-4 flex flex-col-reverse md:flex-row items-center justify-between mb-10">
       {/* Left Content (Image) */}
-      <div className="relative w-full md:w-1/2 flex justify-center items-center mb-12 md:mb-0">
+      <div className="relative w-full md:w-1/2 justify-center items-center mb-12 md:mb-0 hidden md:block">
         {/* Outer Hexagon */}
         <div className="clip-hexagon bg-[var(--primary-color)] p-4 relative mt-16 md:mt-0 w-full h-[35vh] md:h-[70vh] flex items-center justify-center">
           {/* Middle Hexagon */}

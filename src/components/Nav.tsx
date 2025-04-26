@@ -38,10 +38,11 @@ function Nav() {
                   DOWNLOAD CATALOG
                 </button>
               </a>
-
-              <button className="hover:text-[var(--text-light)] transition cursor-pointer">
-                CORPORATE OFFICE
-              </button>
+              <a href="/contact">
+                <button className="hover:text-[var(--text-light)] transition cursor-pointer">
+                  CORPORATE OFFICE
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -90,9 +91,11 @@ function Nav() {
           </nav>
 
           {/* CTA */}
-          <div className="hidden md:flex bg-[var(--secondary-color)] text-white p-2 px-5 rounded-full text-xs items-center hover:bg-[var(--primary-color)] transition cursor-pointer">
-            <span className="mr-2">CONTACT US</span>
-          </div>
+          <a href="/contact">
+            <div className="hidden md:flex bg-[var(--secondary-color)] text-white p-2 px-5 rounded-full text-xs items-center hover:bg-[var(--primary-color)] transition cursor-pointer">
+              <span className="mr-2">CONTACT US</span>
+            </div>
+          </a>
 
           {/* Mobile Toggle */}
           <button
@@ -135,9 +138,11 @@ function Nav() {
                 MEDIA
               </a>
               <div>
-                <button className="bg-[var(--secondary-color)] text-white w-fit px-3 py-2 rounded-full text-xs hover:bg-[var(--primary-color)] transition">
-                  CONTACT US
-                </button>
+                <a href="/contact">
+                  <button className="bg-[var(--secondary-color)] text-white w-fit px-3 py-2 rounded-full text-xs hover:bg-[var(--primary-color)] transition">
+                    CONTACT US
+                  </button>
+                </a>
               </div>
             </div>
           )}
