@@ -84,7 +84,7 @@ const ProductCategories: React.FC = () => {
 
   return (
     <section className="py-12 bg-white">
-      <h2 className="text-4xl font-bold text-center text-[var(--secondary-color)] mb-10">
+      <h2 className="text-4xl md:text-5xl font-bold text-center text-[var(--primary-color)] mb-10">
         Our Product Categories
       </h2>
 

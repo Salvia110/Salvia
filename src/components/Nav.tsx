@@ -64,13 +64,13 @@ function Nav() {
           {/* Desktop Nav */}
           <nav className="hidden md:flex space-x-8 font-semibold text-gray-800">
             <a
-              href="#"
+              href="/"
               className="hover:text-[var(--secondary-color)] transition"
             >
               HOME
             </a>
             <a
-              href="/"
+              href="#"
               className="hover:text-[var(--secondary-color)] transition"
             >
               PRODUCTS
