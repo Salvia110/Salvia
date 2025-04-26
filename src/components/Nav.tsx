@@ -56,7 +56,9 @@ function Nav() {
         <div className="md:w-11/12 mx-auto flex justify-between items-center px-6 md:px-4 py-3 relative">
           {/* Logo */}
           <div>
-            <img src={logo} alt="Logo" className="w-32 md:w-36" />
+            <a href="/">
+              <img src={logo} alt="Logo" className="w-32 md:w-36" />
+            </a>
           </div>
 
           {/* Desktop Nav */}
@@ -74,7 +76,7 @@ function Nav() {
               PRODUCTS
             </a>
             <a
-              href="#"
+              href="/about"
               className="hover:text-[var(--secondary-color)] transition"
             >
               ABOUT US

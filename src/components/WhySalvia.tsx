@@ -1,4 +1,8 @@
 import "../App.css";
+import thumb1 from "../assets/WhySalvia/thumb-1.jpg";
+import thumb2 from "../assets/WhySalvia/thumb-2.jpg";
+import thumb3 from "../assets/WhySalvia/thumb-3.jpg";
+import mainImage from "../assets/WhySalvia/whysalvia.jpg";
 
 const WhySalvia = () => {
   return (
@@ -12,7 +16,7 @@ const WhySalvia = () => {
             {/* Inner Hexagon Image */}
             <div className="clip-hexagon w-full h-full overflow-hidden">
               <img
-                src="https://vikrlife.com/assets/images/resource/about-1.jpg" // your image
+                src={mainImage} // your image
                 alt="Eco Friendly"
                 className="w-full h-full object-cover"
               />
@@ -22,27 +26,15 @@ const WhySalvia = () => {
 
         {/* Small Circles */}
         <div className="absolute top-20 md:top-10 left-1/3 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-white shadow-md flex items-center justify-center">
-          <img
-            src="https://vikrlife.com/assets/images/resource/thumb-1.jpg"
-            alt="Icon"
-            className="w-full rounded-full"
-          />
+          <img src={thumb1} alt="Icon" className="w-full rounded-full" />
         </div>
 
         <div className="absolute top-1/2 right-0 md:right-5 -translate-y-1/2 w-16 h-16 rounded-full bg-white shadow-md flex items-center justify-center">
-          <img
-            src="https://vikrlife.com/assets/images/resource/thumb-2.jpg"
-            alt="Icon"
-            className="w-16 h-16 rounded-full"
-          />
+          <img src={thumb2} alt="Icon" className="w-16 h-16 rounded-full" />
         </div>
 
         <div className="absolute bottom-10 left-1/3 -translate-x-1/2 translate-y-1/2 w-16 h-16 rounded-full bg-white shadow-md flex items-center justify-center">
-          <img
-            src="https://vikrlife.com/assets/images/resource/thumb-3.jpg"
-            alt="Icon"
-            className="w-16 h-16 rounded-full"
-          />
+          <img src={thumb3} alt="Icon" className="w-16 h-16 rounded-full" />
         </div>
 
         {/* 30+ Non Toxic Badge */}

@@ -1,11 +1,15 @@
+import AboutUs from "./pages/AboutUs";
 import Landing from "./pages/Landing";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
-    <div>
-      <Landing />
-    </div>
+    <Router>
+      <Routes>
+        {/* Route for Landing Page */}
+        <Route path="/" element={<Landing />} />
+        <Route path="/about" element={<AboutUs />} />
+      </Routes>
+    </Router>
   );
 }
-
-export default App;
