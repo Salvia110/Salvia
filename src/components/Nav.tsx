@@ -70,7 +70,7 @@ function Nav() {
               HOME
             </a>
             <a
-              href="#"
+              href="/"
               className="hover:text-[var(--secondary-color)] transition"
             >
               PRODUCTS
@@ -111,7 +111,7 @@ function Nav() {
           {isOpen && (
             <div className="absolute top-full left-0 w-full bg-white/70 backdrop-blur-md shadow-md flex flex-col items-center px-6 py-6 space-y-5 z-50 text-gray-800 md:hidden">
               <a
-                href="#"
+                href="/"
                 className="hover:text-[var(--secondary-color)] transition"
               >
                 HOME
@@ -123,7 +123,7 @@ function Nav() {
                 PRODUCTS
               </a>
               <a
-                href="#"
+                href="/about"
                 className="hover:text-[var(--secondary-color)] transition"
               >
                 ABOUT US
@@ -143,6 +143,7 @@ function Nav() {
           )}
         </div>
       </div>
+      {isScrolled && <div className="h-36 md:h-40"></div>}
     </header>
   );
 }
