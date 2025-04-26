@@ -7,21 +7,21 @@ import Nav from "./Nav";
 const slides = [
   {
     image: image1,
-    heading: "Step Towards Green World",
+    heading: "Eco-Friendly Cleaning Solutions for a Healthier Tomorrow",
     description:
-      "Find Our Non Toxic & Non Chemical Range Of Products For Better World",
+      "Revolutionizing Hygiene with Non-Toxic Innovations for Industries, Offices, and Homes.",
   },
   {
     image: image2,
-    heading: "Healthy Products, Healthy Planet",
+    heading: "Clean Spaces, Healthier Lives",
     description:
-      "Our Eco-friendly Innovations Are Changing Lives One Product At A Time",
+      "Your Trusted Partner for Eco-Friendly Cleaning and Hygiene Solutions.",
   },
   {
     image: image3,
-    heading: "Nature-Powered Living",
+    heading: "Commitment to a Cleaner, Greener Future",
     description:
-      "Say Yes To Organic, Say Yes To Sustainability With Our Unique Range",
+      "Harnessing the Power of Nature for Safe, Sustainable Environments.",
   },
 ];
 
@@ -49,24 +49,14 @@ const Hero = () => {
           className="absolute inset-0 w-full h-full object-cover"
         />
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/70"></div>
 
         {/* Content */}
         <div className="relative z-10 text-center px-4 max-w-2xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[var(--primary-color)]">
             {currentSlide.heading}
           </h1>
-          <p className="mb-6 text-lg">{currentSlide.description}</p>
-          <div className="flex justify-center space-x-6">
-            <div className="bg-green-700 p-4 rounded-xl">
-              <div className="text-xl font-bold">15+</div>
-              <div className="text-sm">Categories</div>
-            </div>
-            <div className="bg-green-700 p-4 rounded-xl">
-              <div className="text-xl font-bold">30+</div>
-              <div className="text-sm">Products</div>
-            </div>
-          </div>
+          <p className="mb-6 text-lg text-white">{currentSlide.description}</p>
         </div>
       </div>
     </div>
