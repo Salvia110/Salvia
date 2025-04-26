@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.png";
-import bg from "../assets/full-shot-man-vacuuming-office-floor.jpg";
+import bg from "../assets/full-shot-man-vacuuming-office-f.jpg";
 
 const Footer: React.FC = () => {
   return (
