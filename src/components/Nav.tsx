@@ -34,12 +34,12 @@ function Nav() {
             </div>
             <div className="hidden md:flex space-x-6">
               <a href={catalog} target="_blank" rel="noopener noreferrer">
-                <button className="hover:underline transition cursor-pointer">
-                  CATALOG
+                <button className="hover:text-[var(--text-light)] transition cursor-pointer">
+                  DOWNLOAD CATALOG
                 </button>
               </a>
 
-              <button className="hover:underline transition cursor-pointer">
+              <button className="hover:text-[var(--text-light)] transition cursor-pointer">
                 CORPORATE OFFICE
               </button>
             </div>

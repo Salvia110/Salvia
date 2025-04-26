@@ -1,5 +1,6 @@
 import image1 from "../assets/banner-4.jpg";
 import "../App.css";
+import catelog from "../assets/Catalog.pdf";
 
 const AboutUs = () => {
   return (
@@ -37,6 +38,15 @@ const AboutUs = () => {
           needs across India. We also conduct trainings and seminars to upskill
           your teams with modern cleaning and hygiene techniques.
         </p>
+
+        {/* Download Catalog Button */}
+        <a
+          href={catelog} // path to your catalog file
+          download
+          className="inline-block bg-[var(--primary-color)] text-white font-semibold py-3 px-6 rounded-full hover:bg-[var(--secondary-color)] transition duration-300 mb-5"
+        >
+          DOWNLOAD CATALOG
+        </a>
       </div>
 
       {/* Right Content */}
