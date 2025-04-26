@@ -43,7 +43,7 @@ const AboutUs = () => {
         <a
           href={catelog} // path to your catalog file
           download
-          className="inline-block bg-[var(--primary-color)] text-white font-semibold py-3 px-6 rounded-full hover:bg-[var(--secondary-color)] transition duration-300 mb-5"
+          className="inline-block bg-[var(--secondary-color)] text-white font-semibold py-3 px-6 rounded-full hover:bg-[var(--primary-color)] transition duration-300 mb-5"
         >
           DOWNLOAD CATALOG
         </a>
