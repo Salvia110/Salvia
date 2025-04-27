@@ -53,7 +53,7 @@ function AboutUs() {
         </div>
 
         {/* Right Content */}
-        <div className="relative w-full md:w-1/2 flex justify-center">
+        <div className="relative w-full md:w-1/2 justify-center hidden md:block">
           {/* Hexagon Top Left */}
           <div className="absolute top-0 md:top-4 left-8">
             <div className="w-8 h-8 bg-[var(--primary-color)] clip-hexagon mb-2"></div>
@@ -146,7 +146,7 @@ function AboutUs() {
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center px-6">
-          <div className="border-4 border-white p-6 rounded-xl backdrop-blur-md bg-white/10 w-2/3 text-center">
+          <div className="border-4 border-white p-6 rounded-xl backdrop-blur-md bg-white/10 md:w-2/3 text-center">
             {/* File Icon */}
             <div className="flex justify-center mb-6">
               <FileTextIcon size={48} className="text-white" />
@@ -156,7 +156,7 @@ function AboutUs() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Download Our Brochure
             </h2>
-            <p className="text-white mb-8">
+            <p className="text-white mb-8 hidden md:block">
               Explore our full range of products, services, and solutions
               designed to elevate your business.
             </p>

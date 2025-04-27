@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   ShieldCheck,
   Star,
@@ -5,11 +6,64 @@ import {
   Lightbulb,
   Users,
   Handshake,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 
 export default function CoreValues() {
+  const cards = [
+    {
+      icon: ShieldCheck,
+      title: "Trust",
+      description:
+        "Building strong and lasting relationships based on honesty and reliability.",
+    },
+    {
+      icon: Star,
+      title: "Quality",
+      description:
+        "Delivering only the best products and services with attention to every detail.",
+    },
+    {
+      icon: Leaf,
+      title: "Sustainability",
+      description:
+        "Promoting eco-friendly solutions to preserve our environment for future generations.",
+    },
+    {
+      icon: Lightbulb,
+      title: "Innovation",
+      description:
+        "Continuously evolving and embracing new ideas for smarter, cleaner solutions.",
+    },
+    {
+      icon: Users,
+      title: "Customer First",
+      description:
+        "Prioritizing the needs of our customers to deliver unmatched experiences and support.",
+    },
+    {
+      icon: Handshake,
+      title: "Integrity",
+      description:
+        "Upholding the highest standards of ethics and professionalism in every action.",
+    },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrev = () => {
+    setCurrentIndex((prev) => (prev === 0 ? cards.length - 1 : prev - 1));
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev === cards.length - 1 ? 0 : prev + 1));
+  };
+
+  const Icon = cards[currentIndex].icon;
+
   return (
-    <section className="w-11/12 mx-auto mb-16 px-6">
+    <section className="md:w-11/12 mx-auto mb-16 md:px-4">
       {/* Heading */}
       <div className="text-center mb-12">
         <h2 className="text-[var(--primary-color)] font-bold text-4xl md:text-5xl mb-4">
@@ -22,91 +76,49 @@ export default function CoreValues() {
         </p>
       </div>
 
-      {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {/* Card 1 */}
-        <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition text-center">
+      {/* Mobile View - Only One Card with Arrows */}
+      <div className="sm:hidden relative flex items-center justify-center">
+        <button
+          onClick={handlePrev}
+          className="absolute left-0 p-2 rounded-full bg-gray-200 hover:bg-gray-300"
+        >
+          <ChevronLeft className="w-6 h-6 text-[var(--secondary-color)]" />
+        </button>
+
+        <div className="bg-white p-4 rounded-2xl shadow-md text-center w-80">
           <div className="flex items-center justify-center mb-6">
-            <ShieldCheck className="text-[var(--primary-color)] w-12 h-12" />
+            <Icon className="text-[var(--primary-color)] w-12 h-12" />
           </div>
           <h4 className="text-xl font-semibold text-[var(--primary-color)] mb-2">
-            Trust
+            {cards[currentIndex].title}
           </h4>
-          <p className="text-gray-600">
-            Building strong and lasting relationships based on honesty and
-            reliability.
-          </p>
+          <p className="text-gray-600">{cards[currentIndex].description}</p>
         </div>
 
-        {/* Card 2 */}
-        <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition text-center">
-          <div className="flex items-center justify-center mb-6">
-            <Star className="text-[var(--primary-color)] w-12 h-12" />
-          </div>
-          <h4 className="text-xl font-semibold text-[var(--primary-color)] mb-2">
-            Quality
-          </h4>
-          <p className="text-gray-600">
-            Delivering only the best products and services with attention to
-            every detail.
-          </p>
-        </div>
+        <button
+          onClick={handleNext}
+          className="absolute right-0 p-2 rounded-full bg-gray-200 hover:bg-gray-300"
+        >
+          <ChevronRight className="w-6 h-6 text-[var(--secondary-color)]" />
+        </button>
+      </div>
 
-        {/* Card 3 */}
-        <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition text-center">
-          <div className="flex items-center justify-center mb-6">
-            <Leaf className="text-[var(--primary-color)] w-12 h-12" />
+      {/* Desktop View - Grid of Cards */}
+      <div className="hidden sm:grid grid-cols-2 lg:grid-cols-3 gap-8">
+        {cards.map((card, idx) => (
+          <div
+            key={idx}
+            className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition text-center"
+          >
+            <div className="flex items-center justify-center mb-6">
+              <card.icon className="text-[var(--primary-color)] w-12 h-12" />
+            </div>
+            <h4 className="text-xl font-semibold text-[var(--primary-color)] mb-2">
+              {card.title}
+            </h4>
+            <p className="text-gray-600">{card.description}</p>
           </div>
-          <h4 className="text-xl font-semibold text-[var(--primary-color)] mb-2">
-            Sustainability
-          </h4>
-          <p className="text-gray-600">
-            Promoting eco-friendly solutions to preserve our environment for
-            future generations.
-          </p>
-        </div>
-
-        {/* Card 4 */}
-        <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition text-center">
-          <div className="flex items-center justify-center mb-6">
-            <Lightbulb className="text-[var(--primary-color)] w-12 h-12" />
-          </div>
-          <h4 className="text-xl font-semibold text-[var(--primary-color)] mb-2">
-            Innovation
-          </h4>
-          <p className="text-gray-600">
-            Continuously evolving and embracing new ideas for smarter, cleaner
-            solutions.
-          </p>
-        </div>
-
-        {/* Card 5 */}
-        <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition text-center">
-          <div className="flex items-center justify-center mb-6">
-            <Users className="text-[var(--primary-color)] w-12 h-12" />
-          </div>
-          <h4 className="text-xl font-semibold text-[var(--primary-color)] mb-2">
-            Customer First
-          </h4>
-          <p className="text-gray-600">
-            Prioritizing the needs of our customers to deliver unmatched
-            experiences and support.
-          </p>
-        </div>
-
-        {/* Card 6 */}
-        <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition text-center">
-          <div className="flex items-center justify-center mb-6">
-            <Handshake className="text-[var(--primary-color)] w-12 h-12" />
-          </div>
-          <h4 className="text-xl font-semibold text-[var(--primary-color)] mb-2">
-            Integrity
-          </h4>
-          <p className="text-gray-600">
-            Upholding the highest standards of ethics and professionalism in
-            every action.
-          </p>
-        </div>
+        ))}
       </div>
     </section>
   );
