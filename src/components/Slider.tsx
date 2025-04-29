@@ -1,14 +1,14 @@
 import React, { useEffect, useRef } from "react";
-import img1 from "../assets/product catogory/G07.jpg";
+import img1 from "../assets/product catogory/G07.webp";
 import img2 from "../assets/product catogory/Hygiene-Trolley.jpg";
-import img3 from "../assets/product catogory/d3.jpg";
+import img3 from "../assets/product catogory/d3.webp";
 import img4 from "../assets/product catogory/images.jpg";
 import img5 from "../assets/product catogory/wet-dry-vacuum-cleaner-250x250.webp";
 import img6 from "../assets/product catogory/1704717300927-watmrkA.webp";
 import img7 from "../assets/product catogory/4276a1_a4a36dd4058c4e3fb0f482d47d16b3c7~mv2.avif";
 import img8 from "../assets/product catogory/Flipper-1.webp";
 import img9 from "../assets/product catogory/unnamed.jpg";
-import img10 from "../assets/product catogory/wet-dry-vacuum-cleaner-250x250.webp";
+import img10 from "../assets/product catogory/pressure-washers-for-cars-karcher-high-pressure-car-washer-k-3-550-1_large.webp";
 
 const ProductCategories: React.FC = () => {
   const sliderRef = useRef<HTMLDivElement>(null);
@@ -31,52 +31,52 @@ const ProductCategories: React.FC = () => {
 
   const products = [
     {
-      title: "Mosquito Defence",
+      title: "SCRUBBER DRIER",
       image: img1,
       bgColor: "bg-[var(--secondary-color)]",
     },
     {
-      title: "Bio Handwash",
+      title: "HYGIENE TROLLEY",
       image: img2,
       bgColor: "bg-[var(--secondary-color)]",
     },
     {
-      title: "Bio Degreaser",
+      title: "RIDE ON SCRUBBER DRIER",
       image: img3,
       bgColor: "bg-[var(--secondary-color)]",
     },
     {
-      title: "Stainless Steel Polish",
+      title: "DOUBLE BUCKET 30LTR",
       image: img4,
       bgColor: "bg-[var(--secondary-color)]",
     },
     {
-      title: "Wet & Dry Vacuum Cleaner",
+      title: "WET & DRY VACUUM CLEANER",
       image: img5,
       bgColor: "bg-[var(--secondary-color)]",
     },
     {
-      title: "Wet & Dry Vacuum Cleaner",
+      title: "SINGLE DISK",
       image: img6,
       bgColor: "bg-[var(--secondary-color)]",
     },
     {
-      title: "Wet & Dry Vacuum Cleaner",
+      title: "TRIPPLE BUCKET TROLLEY",
       image: img7,
       bgColor: "bg-[var(--secondary-color)]",
     },
     {
-      title: "Wet & Dry Vacuum Cleaner",
+      title: "MANUAL SWEEPER",
       image: img8,
       bgColor: "bg-[var(--secondary-color)]",
     },
     {
-      title: "Wet & Dry Vacuum Cleaner",
+      title: "CADDY",
       image: img9,
       bgColor: "bg-[var(--secondary-color)]",
     },
     {
-      title: "Wet & Dry Vacuum Cleaner",
+      title: "HIGH PRESSURE",
       image: img10,
       bgColor: "bg-green-700",
     },
