@@ -53,6 +53,14 @@ export default function Product() {
 
         {/* Product Display */}
         <main className="flex-1 p-4 md:p-6 overflow-y-auto">
+          {/* Selected Category Label for Mobile */}
+          <div className="md:hidden text-center text-lg font-semibold text-gray-700 mb-4">
+            Showing:{" "}
+            <span className="text-[var(--secondary-color)]">
+              {selectedCategory}
+            </span>
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
             {filteredProducts.map((product) => (
               <div
