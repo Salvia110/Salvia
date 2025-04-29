@@ -4,7 +4,7 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 
 export default function Product() {
-  const [selectedCategory, setSelectedCategory] = useState("SWEEPERS");
+  const [selectedCategory, setSelectedCategory] = useState("BUCKET & TROLLEY");
   const [menuOpen, setMenuOpen] = useState(false);
 
   const filteredProducts = products.filter(
