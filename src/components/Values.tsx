@@ -28,13 +28,13 @@ export default function CoreValues() {
       icon: Leaf,
       title: "Sustainability",
       description:
-        "Promoting eco-friendly solutions to preserve our environment for future generations.",
+        "Promoting eco-friendly industrial cleaning equipment to preserve our environment for future generations.",
     },
     {
       icon: Lightbulb,
       title: "Innovation",
       description:
-        "Continuously evolving and embracing new ideas for smarter, cleaner solutions.",
+        "Continuously evolving and embracing new technologies to deliver smarter, cleaner industrial cleaning equipment",
     },
     {
       icon: Users,

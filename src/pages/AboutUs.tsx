@@ -25,52 +25,52 @@ function AboutUs() {
 
           {/* Main Heading */}
           <h2 className="text-[var(--primary-color)] font-bold text-4xl md:text-5xl leading-tight mb-6">
-            Revolutionizing Hygiene Solutions for a Cleaner Tomorrow
+            Revolutionizing Industrial Cleaning Equipment for a Cleaner Tomorrow{" "}
           </h2>
 
           {/* Description */}
           <p className="text-gray-600 text-base leading-relaxed mb-8">
-            At SALVIA Sales Corporation, we are redefining cleanliness with our
-            innovative, sustainable, and customer-centric hygiene solutions.
-            Based in Faridabad, India, our company proudly serves a wide range
-            of industries, including hospitality, healthcare, education, retail,
-            and corporate spaces.
+            SALVIA SALES CORPORATION is a multidimensional fastgrowing Cleaning
+            and Hygiene company headquartered in Faridabad, India. Our Cleaning
+            and Hygiene solution are available at all sectors like industries,
+            Auto workshop, Multiplex, Hotels, Hospitals, School & Colleges,
+            Railways Station & Platforms, Housekeeping Agencies, Corporate and
+            Normal office etc.
             <br />
             <br />
-            With over a decade of experience, our team specializes in delivering
-            state-of-the-art cleaning and hygiene products, from eco-friendly
-            solutions to advanced equipment. We strive to ensure a cleaner,
-            safer environment for businesses, institutions, and communities
-            alike.
+            Our Combined knowledge and extensive experience in the industry
+            allow us to offer our clients practical yet cost effective solution
+            to satisfy environmental demands. At SALVIA Sales Corporation we
+            understand the need for cleaner and healthier environment therefore
+            our commitment to our clients is to continually specify and make use
+            of superior Eco-friendly products and approved equipment’s.
             <br />
             <br />
-            Our core values of integrity, sustainability, and excellence drive
-            us to not only provide top-notch products but also offer expert
-            guidance through workshops, seminars, and on-site training. Trust us
-            to be your partner in building a cleaner, healthier, and greener
-            future.
+            SALVIA SALES CORPORATION has a team of qualified professionals to
+            cater to all Sales needs of Indian market. We organize training and
+            seminars to train your working team with modern technique of
+            cleaning and Hygiene solution.
           </p>
         </div>
 
         {/* Right Content */}
-        <div className="relative w-full md:w-1/2 justify-center hidden md:block">
-          {/* Hexagon Top Left */}
-          <div className="absolute top-0 md:top-4 left-8">
-            <div className="w-8 h-8 bg-[var(--primary-color)] clip-hexagon mb-2"></div>
-            <div className="w-8 h-8 bg-[var(--secondary-color)] clip-hexagon"></div>
-          </div>
-
-          {/* Image */}
+        <div className="relative w-full md:w-1/2 flex items-center justify-center">
           <img
             src={image1}
             alt="Hygiene Professional"
-            className="rounded-lg shadow-lg w-3/4  clip-hexagon"
+            className="rounded-lg shadow-lg max-w-full h-auto md:max-h-[500px] object-cover clip-hexagon"
           />
 
           {/* Go Green Button */}
-          <div className="absolute -bottom-2 left-1/3 transform -translate-x-1/2 bg-[var(--secondary-color)] text-white text-center rounded-full w-20 h-20 md:w-32 md:h-32 flex flex-col justify-center items-center shadow-lg">
+          <div className="absolute -bottom-2 left-1/3 transform -translate-x-1/2 bg-[var(--secondary-color)] text-white text-center rounded-full w-30 h-30 md:w-32 md:h-32 flex flex-col justify-center items-center shadow-lg">
             <span className="text-2xl font-bold">Go</span>
             <span className="text-sm tracking-wide mt-1">SUSTAINABLE</span>
+          </div>
+
+          {/* Hexagon Top Left */}
+          <div className="absolute top-[-20px] left-10">
+            <div className="w-8 h-8 bg-[var(--primary-color)] clip-hexagon mb-2"></div>
+            <div className="w-8 h-8 bg-[var(--secondary-color)] clip-hexagon"></div>
           </div>
 
           {/* Hexagon Bottom Right */}
@@ -110,11 +110,12 @@ function AboutUs() {
                 Our Mission
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Our mission is to revolutionize the hygiene industry by
-                delivering innovative, eco-friendly solutions that ensure clean
-                and healthy environments. We are committed to empowering
-                industries and communities with sustainable products, expert
-                support, and a dedication to environmental responsibility.
+                Our mission is to revolutionize the industrial cleaning
+                equipment sector by delivering innovative, eco-friendly machines
+                and solutions that ensure cleaner and safer environments. We are
+                committed to empowering industries and institutions with
+                sustainable technologies, expert support, and a strong
+                dedication to environmental responsibility.
               </p>
             </div>
 
@@ -124,11 +125,12 @@ function AboutUs() {
                 Our Vision
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Our vision is to be the global leader in hygiene and cleaning
-                solutions, inspiring a greener future through innovation,
-                excellence, and integrity. We envision a world where every space
-                promotes health, sustainability, and wellbeing for generations
-                to come.
+                Our vision is to be the global leader in industrial cleaning
+                equipment, driving a greener future through cutting-edge
+                technology, operational excellence, and integrity. We envision a
+                world where every industrial and commercial space benefits from
+                sustainable, high-performance cleaning solutions that promote
+                health, safety, and long-term environmental well-being.
               </p>
             </div>
           </div>
@@ -157,8 +159,8 @@ function AboutUs() {
               Download Our Brochure
             </h2>
             <p className="text-white mb-8 hidden md:block">
-              Explore our full range of products, services, and solutions
-              designed to elevate your business.
+              Explore our full range of industrial cleaning equipment designed
+              to elevate your operational efficiency
             </p>
 
             {/* Download Button */}

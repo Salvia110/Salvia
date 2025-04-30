@@ -22,21 +22,20 @@ const AboutUs = () => {
 
         {/* Description */}
         <p className="text-gray-600 text-base leading-relaxed mb-8">
-          SALVIA Sales Corporation is a fast-growing, multidimensional company
-          based in Faridabad, India, specializing in Cleaning and Hygiene
-          solutions. Our services cater to industries, auto workshops,
-          multiplexes, hotels, hospitals, schools & colleges, railway stations,
-          housekeeping agencies, corporates, and offices.
+          SALVIA SALES CORPORATION is a multidimensional fastgrowing Cleaning
+          and Hygiene company headquartered in Faridabad, India. Our Cleaning
+          and Hygiene solution are available at all sectors like industries,
+          Auto workshop, Multiplex, Hotels, Hospitals, School & Colleges,
+          Railways Station & Platforms, Housekeeping Agencies, Corporate and
+          Normal office etc.
           <br />
           <br />
-          With extensive knowledge and experience, we deliver practical,
-          cost-effective solutions for today's environmental demands. We are
-          committed to offering eco-friendly products and certified equipment.
-          <br />
-          <br />
-          Our qualified professionals support all your sales and after-sales
-          needs across India. We also conduct trainings and seminars to upskill
-          your teams with modern cleaning and hygiene techniques.
+          Our Combined knowledge and extensive experience in the industry allow
+          us to offer our clients practical yet cost effective solution to
+          satisfy environmental demands. At SALVIA Sales Corporation we
+          understand the need for cleaner and healthier environment therefore
+          our commitment to our clients is to continually specify and make use
+          of superior Eco-friendly products and approved equipment’s.
         </p>
 
         {/* Download Catalog Button */}
