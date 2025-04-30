@@ -1,7 +1,4 @@
 import "../App.css";
-import thumb1 from "../assets/WhySalvia/thumb-1.jpg";
-import thumb2 from "../assets/WhySalvia/thumb-2.jpg";
-import thumb3 from "../assets/WhySalvia/thumb-3.jpg";
 import mainImage from "../assets/WhySalvia/whysalvia.jpg";
 
 const WhySalvia = () => {
@@ -17,31 +14,18 @@ const WhySalvia = () => {
             <div className="clip-hexagon w-full h-full overflow-hidden">
               <img
                 src={mainImage} // your image
-                alt="Eco Friendly"
+                alt="Industrial Cleaning Equipment"
                 className="w-full h-full object-cover"
               />
             </div>
           </div>
         </div>
 
-        {/* Small Circles */}
-        <div className="absolute top-20 md:top-10 left-1/3 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-white shadow-md flex items-center justify-center">
-          <img src={thumb1} alt="Icon" className="w-full rounded-full" />
-        </div>
-
-        <div className="absolute top-1/2 right-0 md:right-5 -translate-y-1/2 w-16 h-16 rounded-full bg-white shadow-md flex items-center justify-center">
-          <img src={thumb2} alt="Icon" className="w-16 h-16 rounded-full" />
-        </div>
-
-        <div className="absolute bottom-10 left-1/3 -translate-x-1/2 translate-y-1/2 w-16 h-16 rounded-full bg-white shadow-md flex items-center justify-center">
-          <img src={thumb3} alt="Icon" className="w-16 h-16 rounded-full" />
-        </div>
-
         {/* 30+ Non Toxic Badge */}
         <div className="absolute bottom-0 md:bottom-7 right-1/4 transform translate-x-1/2 bg-[var(--secondary-color)] text-white rounded-full w-24 h-24 flex flex-col items-center justify-center shadow-lg">
-          <span className="text-2xl font-bold">30+</span>
+          <span className="text-2xl font-bold">50+</span>
           <span className="text-xs mt-1 text-center leading-tight">
-            Eco Products
+            Products
           </span>
         </div>
       </div>
@@ -58,7 +42,7 @@ const WhySalvia = () => {
 
         {/* Main Heading */}
         <h2 className="text-[var(--primary-color)] font-bold text-4xl md:text-5xl leading-tight mb-6">
-          Eco-Friendly and Effective Cleaning Solutions
+          Eco-Friendly and Effective Industrial Cleaning Equipment
         </h2>
 
         {/* Features */}
@@ -70,13 +54,13 @@ const WhySalvia = () => {
             </div>
             <div>
               <h4 className="text-[var(--primary-color)] font-semibold text-xl mb-1">
-                Comprehensive Eco Solutions
+                Comprehensive Eco-Friendly Equipment
               </h4>
               <p className="text-gray-600 text-base">
-                SALVIA provides a wide range of environment-friendly cleaning
-                and hygiene products, ensuring minimal environmental impact
-                across industries, corporates, hospitality, healthcare, and
-                educational institutions.
+                SALVIA provides a wide range of industrial cleaning equipment
+                that minimizes environmental impact while ensuring top-tier
+                cleaning performance for industries, factories, workshops, and
+                commercial establishments.
               </p>
             </div>
           </div>
@@ -91,9 +75,10 @@ const WhySalvia = () => {
                 Commitment to Sustainability
               </h4>
               <p className="text-gray-600 text-base">
-                Our focus is on reducing carbon footprints through efficient
-                processes, low energy consumption, and sustainable material
-                sourcing to build a healthier, cleaner future.
+                Our focus is on reducing carbon footprints through the use of
+                energy-efficient cleaning equipment and sustainable materials,
+                helping your business maintain a clean, green, and healthy
+                environment.
               </p>
             </div>
           </div>
