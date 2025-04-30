@@ -120,7 +120,7 @@ function Nav() {
                 HOME
               </a>
               <a
-                href="#"
+                href="/Product"
                 className="hover:text-[var(--secondary-color)] transition"
               >
                 PRODUCTS
