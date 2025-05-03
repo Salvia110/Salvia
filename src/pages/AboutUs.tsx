@@ -54,11 +54,11 @@ function AboutUs() {
         </div>
 
         {/* Right Content */}
-        <div className="relative w-full md:w-1/2 flex items-center justify-center">
+        <div className="relative w-full md:w-1/2 items-center justify-center hidden md:flex">
           <img
             src={image1}
             alt="Hygiene Professional"
-            className="rounded-lg shadow-lg max-w-full h-auto md:max-h-[500px] object-cover clip-hexagon"
+            className="rounded-lg shadow-lg w-full h-auto md:max-h-[600px]  clip-hexagon"
           />
 
           {/* Go Green Button */}
